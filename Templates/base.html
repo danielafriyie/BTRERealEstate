@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="If you are not on BTRE Real Estate, you are not in the market">
+    <meta name="author" content="Daniel Afriyie email:afriyiedaniel1@outlook.com">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <!-- Custom -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+
+    <title>BTRE Real Estate {% block title %}{% endblock %}</title>
+
+</head>
+<body>
+<!-- Topbar -->
+{% include 'partials/_topbar.html' %}
+
+<!-- Navbar -->
+{% include 'partials/_navbar.html' %}
+
+<!-- Main Content -->
+{% block content %}
+
+{% endblock %}
+
+<!-- Footer -->
+{% include 'partials/_footer.html' %}
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %} "></script>
+<script src="{% static 'js/lightbox.min.js' %} "></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %} "></script>
+<script src="{% static 'js/main.js' %} "></script>
+</body>
+</html>
